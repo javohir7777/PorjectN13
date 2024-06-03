@@ -92,7 +92,7 @@ nav {
 }
 @media (max-width: 576px) {
   .nav-menu {
-    display: block;
+    /* display: block; */
     text-align: center;
   }
   .nav-menu__link:hover {
