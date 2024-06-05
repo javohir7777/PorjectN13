@@ -20,6 +20,8 @@ body {
 header {
   background-color: #232536;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -82,6 +84,9 @@ nav {
     padding-top: 30px;
     display: none;
   }
+  .active {
+    display: flex;
+  }
 }
 
 @media (max-width: 870px) {
@@ -92,8 +97,10 @@ nav {
 }
 @media (max-width: 576px) {
   .nav-menu {
-    /* display: block; */
     text-align: center;
+  }
+  .active {
+    display: block;
   }
   .nav-menu__link:hover {
     border-top: none;

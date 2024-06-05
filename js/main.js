@@ -1,9 +1,8 @@
-function myFunction() {
-  let x = document.getElementById("nav-menuId");
-  console.log(x);
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("nav-brand__iconsId");
+  const navMenu = document.getElementById("nav-menuId");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+});
